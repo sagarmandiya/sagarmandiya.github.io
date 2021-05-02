@@ -46,7 +46,6 @@ body{
 section {
 	width: 75%;
 	float: right;
-	min-width: 70vh;
 	max-width: 72%;
 	margin: 5vh;
 	margin-bottom: 1vh;
@@ -410,6 +409,7 @@ img {
 
 #projects_mobile {
 	display: block;
+	padding-right: 6%;
 }
 
 #projects_mobile tr {
