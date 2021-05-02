@@ -54,6 +54,7 @@ section {
 	padding: 2vh;
 	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.55);
+	z-index: 1;
 }
 
 #header_h3 {
@@ -87,7 +88,7 @@ div {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-	z-index = -1;
+	z-index: -1;
 }
 
 .prev_link {
