@@ -413,6 +413,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+	
 #mobile_nav a {
 	position: static;
 	font-size: 90%;
@@ -424,6 +425,7 @@ img {
 	border: 1px solid #06425C;
 	border-radius: 7px;
 	width: 20%;
+	min-width: 100px;
 	min-height: 50px;
 	overflow: hidden;
 	/*display: inline-grid;*/
