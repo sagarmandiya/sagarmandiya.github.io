@@ -170,8 +170,8 @@ progress[value] {
   -webkit-appearance: none;
    appearance: none;
 
-  width: 300px;
-  height: 10px;
+  width: 45%;
+  height: 7px;
   margin: 0.25em;
 }
 
