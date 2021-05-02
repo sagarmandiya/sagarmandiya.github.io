@@ -82,11 +82,12 @@ div {
 	position: fixed;
 	background-image: url("../Image/nav_background.jpg");
 	background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+	z-index = -1;
 }
 
 .prev_link {
