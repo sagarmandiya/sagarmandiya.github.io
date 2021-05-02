@@ -1,5 +1,5 @@
 header {
-	font-size: 7vh;
+	font-size: 200%;
 	line-height: 5vh;
 	display: inline-block;
 	margin: 7vh;
@@ -535,6 +535,8 @@ img {
 	display: inline-flex;
 	margin-right: auto;
 	margin-left: auto;
+	width: 85%;
+	height: auto;
 }
 
 
