@@ -217,6 +217,10 @@ progress[value]::-moz-progress-bar {
   background-size: 35px 20px, 100% 100%, 100% 100%; 
 }
 
+#projects_mobile {
+	display: none;
+}
+
 #projects tr {
 	display: flex;
 	margin-left: 3vh;
@@ -357,6 +361,10 @@ input[type=submit]:hover {
 
 #connect_with_me img{
 	border: 0px;
+	width:60%; 
+	margin-top: 1vh; 
+	margin-bottom: 3vh; 
+	margin-left: 2.25vh;
 }
 
 
@@ -396,6 +404,71 @@ img {
 	height: auto; 
 } 
  
+#projects {
+	display: none;
+}
+
+#projects_mobile {
+	display: block;
+}
+
+#projects_mobile tr {
+	display: flex;
+	margin-left: 3vh;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	margin-bottom: 1.5%;
+}
+
+#projects_mobile td h4 {
+	font-size: 120%;
+	margin-left: 3vh;
+	/*color: rgba(255, 255, 255, 1);*/
+}
+
+#projects_mobile td p {
+	text-align: center;
+	font-size: 100%;
+	margin-left: 3vh;
+	padding-top: 0%;
+	padding-bottom: 1.7%;
+	/*color: rgba(255, 255, 255, 1);*/
+}
+
+#projects_mobile td a {
+	/*color: rgb(210, 210, 210);*/
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 5%;
+    margin-left: 2vh;
+    padding-left: 0%;
+    padding: 1.7%;
+    margin-bottom: 1.5%;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    width: 7em;
+}
+
+#projects_mobile span, #projects_mobile a {
+	background-color: rgba(0, 0, 0, 0.75);
+	display: grid;
+	color: rgba(255, 255, 255, 1);
+	max-width: 32em;
+}
+
+#projects_mobile span:hover {
+	display: grid;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.75);
+	transition: background-color 0.5s;
+	transition: color 0.65s;
+	transition-timing-function: ease-in-out;
+	background-size: cover;
+	margin: 0vh;
+	/*border: 1px solid #000000;
+	border-radius: 10px;*/
+ }
+
  #nav {
  	display: none;
  }
@@ -413,20 +486,19 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
-	
+
 #mobile_nav a {
 	position: static;
 	font-size: 90%;
 	text-decoration: none;
 	color: white;
-	padding: 3%;
 	margin: 2%;
 	/*box-sizing: border-box;*/
 	border: 1px solid #06425C;
 	border-radius: 7px;
 	width: 20%;
-	min-width: 100px;
-	min-height: 50px;
+	min-width: 70px;
+	min-height: 65px;
 	overflow: hidden;
 	/*display: inline-grid;*/
 }
@@ -457,6 +529,14 @@ img {
 	background-color: rgba(0, 0, 0, 0.55);
 	position: static;
 }
+
+.container {
+	float: none;
+	display: inline-flex;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 /*  
 	add specific classes and id's, section,  
