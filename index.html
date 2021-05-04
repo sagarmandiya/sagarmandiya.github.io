@@ -2,61 +2,108 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-	<title>Sagar Mandiya</title>
-	<link rel="stylesheet" href="CSS/SagarMandiya.css">
-	<link rel="icon" type="image/png" href="Image/SM.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Sagar Mandiya</title>
+    <meta name="" content="">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/circle-progress-bar.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/My-Navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/avatars/SM.png">
 </head>
 
 <body>
-	<div id="nav">
-		<img src="Image/SagarMandiya.jpg" alt="Image Sagar Mandiya">
-		<nav>
-			<ul>
-				<li>
-					<a class="links selected" href="index.html">About Me</a>
-				</li>
-				<li>
-					<a class="links" href="Projects.html">Projects </a>
-				</li>
-				<li>
-					<a class="links" href="Certifications.html">Skills & Certifications</a>
-				</li>
-				<li>
-					<a class="links" href="Connect.html">Connect with me</a>
-				</li>
-				<li>
-					<a class="links" href="Resume.pdf" target="_blank">CV</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-
-	<span id="mobile_nav">
-			<nav>
-				<ul>
-					<li>
-						<a class="links selected" href="index.html">About Me</a>
-						<a class="links" href="Projects.html">Projects </a>
-						<a class="links" href="Certifications.html">Skills & Certifications</a>
-						<a class="links" href="Connect.html">Connect with me</a>
-						<a class="links" href="Resume.pdf" target="_blank">CV</a>
-					</li>
-				</ul>
-			</nav>
-		</span>
-	
-	<section>
-		<header>
-			<h1>Sagar Mandiya</h1>
-		</header>
-		<h2>About Me</h2>
-		<p>
-			I am Sagar Mandiya, a student in senior year of my Bachelors of Engineering and Technology in Computer Science. I live in Indore, Madhya Pradesh, India. I have a passion for working with computers, solving any problem that peaks my interest, from building up a computer and installing OS and drivers, to making some interesting project based on Deep Learning. I am currently workng on a project called Deep Fake Detection, where in we train a neural network to detect computer generated fake images and videos, thus preventing the spread of misleading information on social media and other platforms. I have also worked on projects involving computer vision and Natural Language Processing(NLP). I am currently seeking an internship in the field related to Machine Learning. Besides the computer related geeky stuff, I also like to watch and play football (Madridista) as well as play video games in my spare time. 
-		</p>
-		<a class="next_link" href="Projects.html">Projects >>></a>
-	</section>
-
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container-fluid"><img id="logo" src="assets/img/avatars/SM.png"><a class="navbar-brand logo" href="index.html">SAGAR MANDIYA</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" id="active-page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Profile</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="skills-certifications.html">Skills & Certifications</a><a class="dropdown-item" href="cv.pdf" target="_blank">CV</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="connect.html">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <div class="container-fluid">
+                <div class="avatar" style="background: url(&quot;assets/img/avatars/SagarMandiya.jpg&quot;);width: 50%;height: auto;"></div>
+                <div class="about-me">
+                    <p style="font-size: 250%;color: var(--white);"><strong>SAGAR</strong>&nbsp;<strong>MANDIYA</strong></p>				<div class="caption v-middle text-center" style="font-size: 50%">
+					<h1 class="cd-headline clip">
+			            <span class="blc">I'm | </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">Designer.</b>
+			                <b>Developer.</b>
+                            <b>Data Scientist.</b>
+                            <b>Network Engineer.</b>
+			                <b>Creative.</b>
+                          
+			            </span>
+	          		</h1>
+				</div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2>Interests &amp; Skills</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Machine Learning</h3>
+                                <p class="card-text">I have always had a keen interest in Deep Learning, curious as to how the artificial neural networks work. And now that I know, my interest has only peaked. I am currently working on a research on Deep Fake Detection.&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Web Design and Development</h3>
+                                <p class="card-text">After learning C++ in my Higher Secondary school, Web Designing Tools such as HTML5, CSS3, Javascript were the things I focused on, and so by now I have a descent enough understanding of them.&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Game Development</h3>
+                                <p class="card-text">Although, this is the field that I have not been able to give much time yet. But having played so many video games, my interest in game development is now higher than ever before. I have also worked on Unity Game Engine to create some 2D games.&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="no" class="page-footer">
+        <div class="container">
+            <div class="links"><a href="index.html">Home</a><a href="about-me.html">About me</a><a href="projects.html">Projects</a><a href="connect.html">Contact me</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/sagar.mandiya.5/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/sagar_mandiya/" target="_blank"><i class="icon ion-social-instagram-outline"></i></a><a href="https://www.linkedin.com/in/sagar-m-647a2b183" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/sagarmandiya" target="_blank"><i class="icon ion-social-github"></i></a></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>

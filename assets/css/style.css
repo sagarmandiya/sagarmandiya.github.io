@@ -1,0 +1,90 @@
+img {
+  border-style: none;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: hsla(0,0%,100%,.1);
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio-navbar.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.portfolio-block.block-intro {
+  text-align: center;
+  background-image: url("../../assets/img/nature/image9.jpg");
+  margin-bottom: 0%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.page-footer {
+  padding-top: 35px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-bottom: 20px;
+  background: linear-gradient(120deg,#7f70f5,#0ea0ff);
+  color: #fff;
+}
+
+.portfolio-block.block-intro .about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.portfolio-block.block-intro p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 300px) {
+  #about-me-section h1 {
+  }
+}
+
+.page-footer .container a {
+  color: #fff;
+}
+
+#active-page {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+#section-about-me {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 20%;
+}
+
+#about-me-section {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+#contact-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 300px) {
+  #greeting-connect {
+    font-size: 150%;
+    padding-top: 5%;
+  }
+}
+

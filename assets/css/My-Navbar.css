@@ -1,0 +1,32 @@
+#logo {
+  width: 50px;
+  margin-right: 1%;
+}
+
+#active-page {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+img {
+  border-style: none;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: hsla(0,0%,100%,.1);
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio-navbar.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
