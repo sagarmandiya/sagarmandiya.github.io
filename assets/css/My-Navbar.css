@@ -4,8 +4,12 @@
 }
 
 #active-page {
-  border: none;
   border-bottom: 1px solid #ffffff;
+}
+
+.gradient {
+  background: linear-gradient(120deg,#040d51,#009aff);
+  color: #fff;
 }
 
 img {
