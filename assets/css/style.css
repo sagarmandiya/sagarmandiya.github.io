@@ -52,11 +52,6 @@ img {
   margin-bottom: 30px;
 }
 
-@media (max-width: 300px) {
-  #about-me-section h1 {
-  }
-}
-
 .page-footer .container a {
   color: #fff;
 }
@@ -88,3 +83,12 @@ img {
   }
 }
 
+#skills {
+  font-size: 65%;
+}
+
+@media (max-width: 300px) {
+  #skills {
+    font-size: 50%;
+  }
+}
