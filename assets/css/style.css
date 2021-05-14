@@ -54,7 +54,7 @@ img {
 
 @media (max-width: 300px) {
   .portfolio-block.block-intro p {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
 
