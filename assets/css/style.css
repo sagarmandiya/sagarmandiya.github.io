@@ -52,6 +52,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media (max-width: 300px) {
+  .portfolio-block.block-intro p {
+    font-size: 90%;
+  }
+}
+
 .page-footer .container a {
   color: #fff;
 }
