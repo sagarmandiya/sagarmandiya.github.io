@@ -9,6 +9,7 @@
 
 .gradient {
   background: linear-gradient(120deg,#37bfdf,#009aff);
+  /* background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%); */
   color: #fff;
 }
 
