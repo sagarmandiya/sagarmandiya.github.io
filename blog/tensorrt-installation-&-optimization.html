@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TensorRT installation on Ubuntu 20.04 - Sagar Mandiya</title>
+    <meta name="" content="">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="../assets/css/circle-progress-bar.css">
+    <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="../assets/css/My-Navbar.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/img/avatars/SM.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container-fluid"><img id="logo" src="../assets/img/avatars/SM.png"><a class="navbar-brand logo" href="index.html">SAGAR MANDIYA</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about-me">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" id="active-page" href="../blog">Blog</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Profile</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="../skills-certifications">Skills & Certifications</a><a class="dropdown-item" href="../cv.pdf" target="_blank">CV</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../connect">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>TensorRT Installation & Optimization</h2>
+                </div>
+                <div class="image" id="cover-img" style="background-image:url(&quot;../assets/img/tech/tensorrt-installation-&-optimization.png&quot;);">
+                </div>
+                <div class="row">
+                    <div class="col info">
+
+                        <h3>Introduction</h3>
+
+                        <p>
+                            TensorRT is a Software Development Kit(SDK) from Nvidia. It enables developers to develop highly 
+                            efficient neural network models, which are capable of providing signficantly low inference time 
+                            than their non-trt optimized counterparts. As useful as this technology is, it is not the easiest 
+                            one to install and get running, given a plethora of it's dependencies. In this article we are going
+                             to install TensorRT in a conda environment, as it is the most easy and relable way to get it up
+                             and running quickly. Let's begin!
+                            <br>
+                        </p>
+                        
+                        <h3>Requirements</h3>
+
+                        <p>
+                            It is assumed that following requirements are met, before proceeding with any of the below
+                            installation. 
+                            <ul>
+                                <li>Ubuntu 20.04 LTS.</li>
+                                <li>Nvidia Graphics Card, with CUDA compatible display drivers. </li>
+                                <li>GCC compiler version 7.x or above.</li>
+                                <li>Anaconda</li>
+                            </ul>
+                        </p>
+
+                        <h3>Installation and Configuration</h3>
+
+                        <p>
+                            Let us start with creating the conda environment. It can be done easily by typing in the following
+                            command into terminal. Replace "your-enviroment-name" by the name you prefer for this env. <br>
+                            <code>$ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1</code>
+
+                            <br><br>
+
+                            The above command creates a new conda environment and installs tensorflow-gpu on the latest
+                            python version available. However you can specify the python version by adding "python==3.x" in the
+                             end like so, and activating it. <br>
+                            <code>$ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1 python==3.8</code><br>
+                            <code>$ conda activate "your-enviroment-name"</code>
+
+                            <br><br>
+                            We can verify the installation of tensorflow-gpu at this point, by importing tensorflow in python 
+                            and checking if gpu is visible to tensorflow, as follows. <br>
+                            <code>$ python</code><br>
+                            <code>>>> import tensorflow as tf</code><br>
+                            <code>>>> tf.__version</code><br>
+                            <code>>>> tf.test.is_gpu_available() # this should return true</code><br>
+                            <code>>>> quit()</code>
+
+                            <br><br>
+                            [Optional] Install other libraries like matplotlib, pandas, scikit-learn, etc.. as follows. <br>
+                            <code>$ conda install -c anaconda pandas matplotlib scikit-learn</code>
+
+                            <br><br>
+
+                            Installing TensorRT in conda environment. <br>
+                            <code>$ pip install nvidia-pyindex</code><br>
+                            <code>$ pip install nvidia-tensorrt</code>
+
+                            <br><br>
+
+                            After this installation the compiler will change from "[GCC 7.3.0] :: Anaconda, Inc. on linux" (version
+                            may differ) to something like "[GCC 7.5.0] on linux" depending on the compiler installed on your 
+                            system. You can check the compiler, by simply typing python in the terminal and pressing enter. An 
+                            output like this should show up.
+                            
+                            <br><br>
+
+                            <img src="../assets/img/tech/gcc.png" alt="GCC Compiler version image"
+                                title="GCC Compiler version image" width="100%">
+
+                            <br><br>
+                        
+                        </p>
+
+                        <h3>Optimizing a deep learning model using TensorRT</h3>
+
+                        <p>
+                            We can now verify the TensorRT installation by optimizing a model. I have used Xception Net here, but 
+                            you can use any model as long as it is in .pb (protobuf) format, by just changing the path to your
+                            model in the following python script. <br>
+
+                            <pre>
+                                <code>
+                                from tensorflow.python.compiler.tensorrt import trt_convert as trt
+
+                                input_saved_model_dir = "./Reference_Data/Model/Xception/"
+                                output_saved_model_dir = "./Reference_Data/Model/Xception/TRT_Model"
+
+                                print("Conversion : Started")
+                                converter = trt.TrtGraphConverterV2(input_saved_model_dir=input_saved_model_dir)
+                                converter.convert()
+                                converter.save(output_saved_model_dir)
+                                print("Conversion : Finished")
+                                </code>
+                            </pre>
+
+                            <p>The Output of the above code should look like this in jupyter notebook or any other IDE.</p>
+
+                            <pre>
+                                <samp>
+                                    Conversion : Started
+                                    INFO:tensorflow:Linked TensorRT version: (0, 0, 0)
+                                    INFO:tensorflow:Loaded TensorRT version: (0, 0, 0)
+                                    INFO:tensorflow:Assets written to: ./Reference_Data/Model/Xception/TRT_Model/assets
+                                    Conversion : Finished
+                                </samp>
+                            </pre>
+                        </p>
+
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta">
+                        <div class="tags"><span class="meta-heading">Tags</span>
+                            <aside>
+                                <p>TensorRT Tutorial</p>
+                                <p>TensorRT installation on Ubuntu 20.04</p>
+                                <p>Optimizing a Deep Learning Model with TensorRT</p>
+                                <p>TensorRT Python</p>
+                            </aside>
+                        </div>
+
+                        <div class="tags"><span class="meta-heading">Resources</span>
+                            <aside>
+                                <p>Anaconda (<a
+                                    href="https://www.anaconda.com/products/individual"
+                                    title="Anaconda" target="_blank"  style="color: #0ea0ff;">download</a>). </p>
+                            </aside>
+                        </div>
+
+                        <div class="tags"><span class="meta-heading">Date</span>
+                            <aside>
+                                <span>02-04-2021</span>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p>
+                    And that concludes the installation, configuration as well as optimization of TensorRT. I
+                    hope it helps, if you come across any problems in the way, feel free to contact me <a
+                        href="https://www.sagarmandiya.me/connect" title="contact me">here</a>.
+                    If you like this article, share it with your friends and follow me on <a
+                        href="https://github.com/sagarmandiya" title="github">github</a>.
+                    <!-- and visit my blog for more such content. -->
+                </p>
+                <!-- <div class="more-projects">
+                    <h3 class="text-center">More Projects</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover"
+                                        src="../assets/img/nature/image2.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover"
+                                        src="../assets/img/nature/image3.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover"
+                                        src="../assets/img/tech/image4.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover"
+                                        src="../assets/img/nature/image5.jpg"></a></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer id="no" class="page-footer">
+        <div class="container">
+            <div class="links"><a href="../index">Home</a><a href="../about-me">About me</a><a
+                    href="../projects">Projects</a><a href="../blog">Blog</a><a href="../connect">Contact me</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/sagar.mandiya.5/" title="Facebook"
+                    target="_blank"><i class="icon ion-social-facebook"></i></a><a
+                    href="https://www.instagram.com/sagar_mandiya/" title="Instagram" target="_blank"><i
+                        class="icon ion-social-instagram-outline"></i></a><a
+                    href="https://www.linkedin.com/in/sagar-m-647a2b183" title="LinkedIn" target="_blank"><i
+                        class="icon ion-social-linkedin"></i></a><a href="https://github.com/sagarmandiya"
+                    title="Github" target="_blank"><i class="icon ion-social-github"></i></a></div>
+            Copyright &copy; Sagar Mandiya
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/smart-forms.min.js"></script>
+    <script src="../assets/js/Animated-Type-Heading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

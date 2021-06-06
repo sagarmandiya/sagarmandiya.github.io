@@ -2,26 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGR575R7Q0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GGR575R7Q0');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projects - Sagar Mandiya</title>
     <meta name="" content="">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="assets/css/circle-progress-bar.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/My-Navbar.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/img/avatars/SM.png">
 </head>
@@ -33,8 +28,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active" href="index">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about-me">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" id="active-page" href="projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="linux-system-monitor">Blog</a></li>
+                    <li class="nav-item"><a id="active-page" class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Profile</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="skills-certifications">Skills & Certifications</a><a class="dropdown-item" href="cv.pdf" target="_blank">CV</a></div>
                     </li>
@@ -43,77 +38,26 @@
             </div>
         </div>
     </nav>
-    <main class="page projects-page">
-        <section class="portfolio-block projects-cards">
-            <div class="container">
-                <div class="heading">
-                    <h1>Recent Projects</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/DeepFake-Detection" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/Deep_Fake_Detection.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#">DeepFake Detection</a></h6>
-                                <p class="text-muted card-text">A Deep Learning based model capable of detecting computer generated fake images and videos from the real ones. Thus can help with the widespread of misleading information currently occupying a considerable chunk of online media. <br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/Movie_Recommendation_System" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/movie_recommendation-system.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#">Movie Recommendation System</a></h6>
-                                <p class="text-muted card-text">A Deep Learning based model capable of recommending movies with the help of various factors like IMDB rating, Genre, etc.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/Sentiment-Analysis-IMDB-review" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/sentiment_analysis.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#">Sentiment Analysis</a></h6>
-                                <p class="text-muted card-text">A Deep Learning (Bi-directional LSTM) based model capable of detecting sentiments, from the public movie reviews posted on the IMDB.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/Face_Recognition" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/face_recognition.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#"><br>Face Recognition System<br></a></h6>
-                                <p class="text-muted card-text">A Deep Learning based model capable of recognizing faces, which are already in the database. Thus can be used for Home security camera.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/Sarcasm-detection-in-News-Headlines" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/sarcasm.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#"><br>Sarcasm Detection in the News Headlines<br></a></h6>
-                                <p class="text-muted card-text">A Natural Language Processing (Bi-directional LSTM) based model capable of detecting human emotions from the text.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/wine-quality-analysis" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/tech/wine_quality_analysis.jpg" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#"><br>Wine Quality Analysis<br></a></h6>
-                                <p class="text-muted card-text">A Machine learning model based on Regression algorithm, trained to predict the quality of wine with the help of several holistic features.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <div class="card border-0"><a href="https://github.com/sagarmandiya/machine_learning/tree/master/Chatbot" target="_blank"><img class="card-img-top scale-on-hover" src="assets/img/avatars/chatot.png" alt="Card Image"></a>
-                            <div class="card-body">
-                                <h6><a href="#">Chat Bot</a></h6>
-                                <p class="text-muted card-text">A Machine learning based model of a chat bot.&nbsp;</p>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+    <main class="page projets-page">
+        <section class="portfolio-block projects compact-grid">
+            <div class="heading">
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/DeepFake-Detection" target="_blank"><img class="img-fluid image" src="assets/img/tech/deep-fake-detection.png"><span class="description"><span class="description-heading"><br>DeepFake Detection</span><span class="description-body"><br>A Deep Learning based model capable of detecting computer generated fake images and videos from the real ones. Thus can help with the widespread of misleading information currently occupying a considerable chunk of online media.<br><br></span></span></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/Movie_Recommendation_System" target="_blank"><img class="img-fluid image" src="assets/img/tech/movie-recommendation-system.png"><span class="description"><span class="description-heading">Movie Recommendation System</span><span class="description-body"><br>A Deep Learning based model capable of recommending movies with the help of various factors like IMDB rating, Genre, etc.<br><br></span></span></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/Sentiment-Analysis-IMDB-review" target="_blank"><img class="img-fluid image" src="assets/img/tech/sentiment-analysis.png"><span class="description"><span class="description-heading">Sentiment Analysis</span><span class="description-body"><br>A Deep Learning (Bi-directional LSTM) based model capable of detecting sentiments, from the public movie reviews posted on the IMDB.<br><br></span></span></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/Face_Recognition" target="_blank"><img class="img-fluid image" src="assets/img/tech/face-recognition.png"><span class="description"><span class="description-heading">Face Recognition</span><span class="description-body"><br>A Deep Learning based model capable of recognizing faces, which are already in the database. Thus can be used for Home security camera.<br><br></span></span></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/Sarcasm-detection-in-News-Headlines" target="_blank"><img class="img-fluid image" src="assets/img/tech/sarcasm.png"><span class="description"><span class="description-heading">Sarcasm Detection in News Headlines</span><span class="description-body"><br>A Natural Language Processing (Bi-directional LSTM) based model capable of detecting human emotions from the text.<br><br></span></span></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="https://github.com/sagarmandiya/wine-quality-analysis" target="_blank"><img class="img-fluid image" src="assets/img/tech/wine-quality-analysis.png"><span class="description"><span class="description-heading">Wine Quality Analysis</span><span class="description-body"><br>A Machine learning model based on Regression algorithm, trained to predict the quality of wine with the help of several holistic features.<br><br></span></span></a></div>
             </div>
         </section>
+        <div class="text-center"><a href="https://github.com/sagarmandiya" target=_blank><button class="button" type="button" data-hover="SURE!"><span>WANNA SEE MORE?</span></button></a></div>
     </main>
     <footer id="no" class="page-footer">
         <div class="container">
             <div class="links"><a href="index">Home</a><a href="about-me">About me</a><a
-                    href="projects">Projects</a><a href="linux-system-monitor">Blog</a><a href="connect">Contact me</a></div>
+                    href="projects">Projects</a><a href="blog">Blog</a><a href="connect">Contact me</a></div>
             <div class="social-icons"><a href="https://www.facebook.com/sagar.mandiya.5/" title="Facebook"
                     target="_blank"><i class="icon ion-social-facebook"></i></a><a
                     href="https://www.instagram.com/sagar_mandiya/" title="Instagram" target="_blank"><i
