@@ -136,7 +136,8 @@
                                 output_saved_model_dir = "./Reference_Data/Model/Xception/TRT_Model"
 
                                 print("Conversion : Started")
-                                converter = trt.TrtGraphConverterV2(input_saved_model_dir=input_saved_model_dir)
+                                converter = trt.TrtGraphConverterV2(input_saved_model_dir=
+                                input_saved_model_dir)
                                 converter.convert()
                                 converter.save(output_saved_model_dir)
                                 print("Conversion : Finished")

@@ -71,11 +71,14 @@ img {
 }
 
 pre {
+  border-left: 1.5mm solid lightblue;
   background-color: aliceblue;
+  width: auto;
 }
 
 pre code, samp{
   white-space: pre-line;
+  width: auto;
 }
 
 @media (max-width: 300px) {
