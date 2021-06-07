@@ -73,12 +73,14 @@ img {
 pre {
   border-left: 1.5mm solid lightblue;
   background-color: aliceblue;
-  width: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
 }
 
 pre code, samp{
   white-space: pre-line;
-  width: auto;
+  min-width: 0;
 }
 
 @media (max-width: 300px) {

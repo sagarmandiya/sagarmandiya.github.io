@@ -5,12 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>TensorRT Installation & Optimization - Sagar Mandiya</title>
-    <meta name="" content="">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="../assets/css/Animated-Type-Heading.css">
-    <link rel="stylesheet" href="../assets/css/circle-progress-bar.css">
     <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="../assets/css/My-Navbar.css">
@@ -44,7 +42,7 @@
                 <div class="image" style="background-image:url(&quot;../assets/img/tech/tensorrt-installation-&-optimization.png&quot;);">
                 </div>
                 <div class="row">
-                    <div class="col info">
+                    <div class="col info" style="min-width: 0;">
 
                         <h3>Introduction</h3>
 
@@ -136,8 +134,7 @@
                                 output_saved_model_dir = "./Reference_Data/Model/Xception/TRT_Model"
 
                                 print("Conversion : Started")
-                                converter = trt.TrtGraphConverterV2(input_saved_model_dir=
-                                input_saved_model_dir)
+                                converter = trt.TrtGraphConverterV2(input_saved_model_dir=input_saved_model_dir)
                                 converter.convert()
                                 converter.save(output_saved_model_dir)
                                 print("Conversion : Finished")
