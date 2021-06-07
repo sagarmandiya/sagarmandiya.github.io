@@ -11,8 +11,17 @@ body {
     margin-top: 17vh;
 }
 
+#home_link {
+    margin-bottom: 5%;
+}
+
 #head h1 {
-    font-size: 8em;
+    font-size: 500%;
+}
+@media (max-width: 768px) {
+    #head h3 {
+        font-size: 150%;
+    }
 }
 
 .caption{
@@ -26,7 +35,7 @@ body {
 
 @media (max-width: 768px) {
     #logo404 {
-        width: 25%;
+        width: 45%;
         height: auto;
     }
   }
