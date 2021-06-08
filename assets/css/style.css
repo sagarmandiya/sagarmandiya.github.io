@@ -78,6 +78,14 @@ pre {
   overflow-x: auto;
 }
 
+#sample_output{
+  border-left: 1.5mm solid rgb(175, 202, 218);
+  /* background-color: rgb(224, 240, 255); */
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+}
+
 pre code, samp{
   white-space: pre-line;
   min-width: 0;

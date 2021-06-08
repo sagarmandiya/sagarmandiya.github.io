@@ -56,6 +56,8 @@
                             using TensorRT. Let's begin!
                             <br>
                         </p>
+
+                        <br><br>
                         
                         <h3>Requirements</h3>
 
@@ -70,55 +72,70 @@
                             </ul>
                         </p>
 
+                        <br><br>
+
                         <h3>Installation and Configuration</h3>
 
                         <p>
-                            Let us start with creating the conda environment. It can be done easily by typing in the following
-                            command into terminal. Replace "your-enviroment-name" by the name you prefer for this env. <br>
-                            <code>$ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1</code>
+                            <p>Let us start with creating the conda environment. It can be done easily by typing in the following
+                            command into terminal. Replace "your-enviroment-name" by the name you prefer for this env. </p>
+                            <pre>
+                            <code>
+                                $ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1</code>
+                            </pre>
 
-                            <br><br>
+                            <br>
 
-                            The above command creates a new conda environment and installs tensorflow-gpu on the latest
+                            <p>The above command creates a new conda environment and installs tensorflow-gpu on the latest
                             python version available. However you can specify the python version by adding "python==3.x" in the
-                             end like so, and activating it. <br>
-                            <code>$ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1 python==3.8</code><br>
-                            <code>$ conda activate "your-enviroment-name"</code>
+                             end like so, and activating it. </p>
+                            <pre>
+                                <code>
+                                    $ conda create -n "your-enviroment-name" tensoflow-gpu==2.4.1 python==3.8
+                                    $ conda activate "your-enviroment-name"</code>
+                            </pre>
 
-                            <br><br>
-                            We can verify the installation of tensorflow-gpu at this point, by importing tensorflow in python 
-                            and checking if gpu is visible to tensorflow, as follows. <br>
-                            <code>$ python</code><br>
-                            <code>>>> import tensorflow as tf</code><br>
-                            <code>>>> tf.__version</code><br>
-                            <code>>>> tf.test.is_gpu_available() # this should return true</code><br>
-                            <code>>>> quit()</code>
+                            <br>
+                            <p>We can verify the installation of tensorflow-gpu at this point, by importing tensorflow in python 
+                            and checking if gpu is visible to tensorflow, as follows. </p>
+                            <pre>
+                            <code>
+                                $ python
+                                >>> import tensorflow as tf
+                                >>> tf.__version
+                                >>> tf.test.is_gpu_available() # this should return true
+                                >>> quit()</code>
+                            </pre>
+                            <br>
+                            
+                            <p>[Optional] Install other libraries like matplotlib, pandas, scikit-learn, etc.. as follows. </p>
+                            <pre>
+                            <code>
+                                $ conda install -c anaconda pandas matplotlib scikit-learn</code>
+                            </pre>
 
-                            <br><br>
-                            [Optional] Install other libraries like matplotlib, pandas, scikit-learn, etc.. as follows. <br>
-                            <code>$ conda install -c anaconda pandas matplotlib scikit-learn</code>
+                            <br>
 
-                            <br><br>
+                            <p>Installing TensorRT in conda environment. </p>
+                            <pre>
+                            <code>
+                                $ pip install nvidia-pyindex
+                                $ pip install nvidia-tensorrt</code>
+                            </pre>
 
-                            Installing TensorRT in conda environment. <br>
-                            <code>$ pip install nvidia-pyindex</code><br>
-                            <code>$ pip install nvidia-tensorrt</code>
+                            <br>
 
-                            <br><br>
-
-                            After this installation the compiler will change from "[GCC 7.3.0] :: Anaconda, Inc. on linux" (version
+                            <p>After this installation the compiler will change from "[GCC 7.3.0] :: Anaconda, Inc. on linux" (version
                             may differ) to something like "[GCC 7.5.0] on linux" depending on the compiler installed on your 
                             system. You can check the compiler, by simply typing python in the terminal and pressing enter. An 
-                            output like this should show up.
-                            
-                            <br><br>
+                            output like this should show up. </p>
 
                             <img src="../assets/img/tech/gcc.png" alt="GCC Compiler version image"
                                 title="GCC Compiler version image" width="100%">
-
-                            <br><br>
                         
                         </p>
+
+                        <br><br>
 
                         <h3>Optimizing a deep learning model using TensorRT</h3>
 
@@ -138,20 +155,18 @@
                                 converter = trt.TrtGraphConverterV2(input_saved_model_dir=input_saved_model_dir)
                                 converter.convert()
                                 converter.save(output_saved_model_dir)
-                                print("Conversion : Finished")
-                                </code>
+                                print("Conversion : Finished")</code>
                             </pre>
-
+                            <br>
                             <p>The Output of the above code should look like this in jupyter notebook or any other IDE.</p>
 
-                            <pre>
+                            <pre id="sample_output">
                                 <samp>
                                     Conversion : Started
                                     INFO:tensorflow:Linked TensorRT version: (0, 0, 0)
                                     INFO:tensorflow:Loaded TensorRT version: (0, 0, 0)
                                     INFO:tensorflow:Assets written to: ./Reference_Data/Model/Xception/TRT_Model/assets
-                                    Conversion : Finished
-                                </samp>
+                                    Conversion : Finished</samp>
                             </pre>
                         </p>
 
@@ -190,7 +205,7 @@
                         href="https://github.com/sagarmandiya" title="github">github</a>.
                     <!-- and visit my blog for more such content. -->
                 </p>
-                <!-- <div class="more-projects">
+                <!-- <div class="You might like">
                     <h3 class="text-center">More Projects</h3>
                     <div class="row gallery">
                         <div class="col-md-4 col-lg-3">
