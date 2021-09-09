@@ -126,6 +126,9 @@ pre code, samp{
     font-size: 150%;
     padding-top: 5%;
   }
+  .description {
+    background-color: rgba(0, 0, 0, 0.55) !important;
+  }
 }
 
 #skills {
