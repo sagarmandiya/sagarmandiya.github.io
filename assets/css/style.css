@@ -199,3 +199,12 @@ pre code, samp{
 
 .timeline-card-success:after {
   background-color: #37BC9B; }
+
+.timeline-card-bu {
+  border-left-color: #f20505; }
+
+.timeline-card-bu:before {
+  border-color: #f20505; }
+
+.timeline-card-bu:after {
+  background-color: #f20505; }
