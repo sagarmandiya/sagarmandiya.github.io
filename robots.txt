@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /cv.pdf
 Disallow: /cv2.pdf
 Disallow: /MandiyaSagarAcademicCV.pdf
+Disallow: /Mandiya_Sagar_wd.pdf
+Disallow: /Mandiya_Sagar_ml.pdf
